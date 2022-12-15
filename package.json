@@ -2,7 +2,7 @@
   "name": "@ts-types/deep-partial",
   "version": "0.0.1",
   "description": "Support deep partial type on typescript",
-  "main": "index.ts",
+  "main": "src/index.ts",
   "keywords": [
     "typescript",
     "partial",
@@ -16,9 +16,13 @@
     "type": "git",
     "url": "https://github.com/ts-types/deep-partial.git"
   },
-  "license": "ISC",
-  "types": "index.d.ts",
+  "license": "MIT",
+  "scripts": {
+    "test": "ts-node ./test/spec.ts"
+  },
+  "types": "src/index.d.ts",
   "devDependencies": {
+    "ts-node": "^10.9.1",
     "typescript": "^4.1.5"
   }
 }

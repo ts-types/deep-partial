@@ -7,7 +7,7 @@ The current behavior of TypeScript's `Partial<T>` type means that nested objects
 will not have the optional status applied to their fields. For example:
 
 ```typescript
-type Person = {
+type Employee = {
   name: string;
   age: number;
   address: {
@@ -16,7 +16,7 @@ type Person = {
   };
 };
 
-const myHouseNumber: Partial<Person> = { address: { number: 52 } };
+const myHouseNumber: Partial<Employee> = { address: { number: 52 } };
 
 // The above is invalid, and results in error: Property 'street' is missing in
 // type '{ number: number; }' but required in type '{ number: number; street: string; }'.
@@ -25,7 +25,7 @@ const myHouseNumber: Partial<Person> = { address: { number: 52 } };
 Using `DeepPartial<T>` instead makes this assignment possible:
 
 ```typescript
-const myHouseNumber: DeepPartial<Person> = { address: { number: 52 } };
+const myHouseNumber: DeepPartial<Employee> = { address: { number: 52 } };
 ```
 
 ## Installation

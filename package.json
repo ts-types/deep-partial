@@ -1,7 +1,7 @@
 {
   "name": "@ts-types/deep-partial",
   "version": "0.0.1",
-  "description": "Support deep partial on typescript",
+  "description": "Support deep partial type on typescript",
   "main": "index.ts",
   "keywords": [
     "typescript",

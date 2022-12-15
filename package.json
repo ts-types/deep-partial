@@ -1,0 +1,24 @@
+{
+  "name": "@ts-types/deep-partial",
+  "version": "0.0.1",
+  "description": "Support deep partial on typescript",
+  "main": "index.ts",
+  "keywords": [
+    "typescript",
+    "partial",
+    "generics",
+    "types",
+    "typescript types",
+    "deep partial types"
+  ],
+  "author": "John Martin <john.itvn@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ts-types/deep-partial.git"
+  },
+  "license": "ISC",
+  "types": "index.d.ts",
+  "devDependencies": {
+    "typescript": "^4.1.5"
+  }
+}
